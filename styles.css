@@ -29,7 +29,7 @@ h1 { font-size: clamp(2rem, 5.2vw, 4.2rem); line-height: 1.03; margin: 0 0 16px;
 .hero-cta { display: flex; gap: 12px; margin-top: 20px; flex-wrap: wrap; }
 .meta { color: #90a2c0; font-size: 13px; margin-top: 14px; }
 .hero-card { border: 1px solid rgba(129,151,186,.26); background: linear-gradient(180deg, rgba(24,35,57,.55), rgba(8,13,22,.6)); border-radius: 22px; padding: 8px; }
-.hero-card img { width: 100%; aspect-ratio: 16/9; object-fit: cover; border-radius: 14px; display: block; }
+.hero-card img { width: 100%; aspect-ratio: 16/9; object-fit: contain; object-position: center; border-radius: 14px; display: block; background:#070b12; }
 .section { padding: 64px 0; }
 .section-dark { background: linear-gradient(180deg, rgba(6,10,17,.5), rgba(6,10,17,.95)); border-top: 1px solid rgba(106,132,176,.2); border-bottom: 1px solid rgba(106,132,176,.2); }
 h2 { font-size: clamp(1.7rem, 3.4vw, 2.7rem); margin: 0 0 14px; }
@@ -38,7 +38,7 @@ h2 { font-size: clamp(1.7rem, 3.4vw, 2.7rem); margin: 0 0 14px; }
 .pill { border: 1px solid rgba(143, 165, 196, .28); background: rgba(11, 18, 31, .62); color: #d7e2f6; padding: 10px 14px; border-radius: 999px; font-size: 13px; }
 .cards { margin-top: 26px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; }
 .card { border: 1px solid var(--line); border-radius: 18px; overflow: hidden; background: var(--card); }
-.card img { width: 100%; height: 300px; object-fit: cover; display: block; }
+.card img { width: 100%; height: 300px; object-fit: contain; display: block; }
 .card-body { padding: 16px; }
 .badge { margin: 0 0 10px; width: fit-content; font-size: 11px; text-transform: uppercase; letter-spacing: .12em; color: #f4deaf; border: 1px solid rgba(214,176,100,.45); border-radius: 999px; padding: 4px 9px; }
 .card h3 { margin: 0 0 8px; font-size: 1.28rem; }
@@ -56,7 +56,7 @@ h2 { font-size: clamp(1.7rem, 3.4vw, 2.7rem); margin: 0 0 14px; }
 
 @media (max-width: 980px) {
   .hero-card img { aspect-ratio: 4/3; }
-  .card img { height: 240px; }
+  .card img { height: 260px; }
   .nav-links, .nav-wrap > .btn { display: none; }
   .hero-grid, .proof-grid { grid-template-columns: 1fr; }
   .cards { grid-template-columns: 1fr; }
